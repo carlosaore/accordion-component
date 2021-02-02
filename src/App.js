@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import AccordionComponent from "./AccordionComponent";
+import './accordion-component.css';
+import MappedAccordionComponent from "./MappedAccordionComponent";
+
+const P = styled.p`
+  font-family : sans-serif
+`
+
+const Div = styled.div`
+  width : 80%;
+  margin-left : auto;
+  margin-right : auto;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Div>
+      <P>A static accordion component:</P>
+      <AccordionComponent />
+      <P>A dynamically mapped accordion component from an object containg the strings:</P>
+      <MappedAccordionComponent />
+    </Div>
   );
 }
 
