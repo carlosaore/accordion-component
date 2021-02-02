@@ -3,10 +3,6 @@ import AccordionComponent from "./AccordionComponent";
 import './accordion-component.css';
 import MappedAccordionComponent from "./MappedAccordionComponent";
 
-const P = styled.p`
-  font-family : sans-serif
-`
-
 const Div = styled.div`
   width : 80%;
   margin-left : auto;
@@ -16,9 +12,9 @@ const Div = styled.div`
 function App() {
   return (
     <Div>
-      <P>A static accordion component:</P>
+      <p>A static accordion component:</p>
       <AccordionComponent />
-      <P>A dynamically mapped accordion component from an object containg the strings:</P>
+      <p>A dynamically mapped accordion component from an object containg the strings:</p>
       <MappedAccordionComponent />
     </Div>
   );

@@ -42,7 +42,7 @@ export default function AccordionComponent() {
             <AccordionItem>
                 <AccordionItemHeading>
                     <AccordionItemButton>
-                        Is free will real or just an illusion?
+                        Click here to see a nested accordion!
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
