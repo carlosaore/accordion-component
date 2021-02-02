@@ -8,6 +8,7 @@ const Div = styled.div`
   margin-left : auto;
   margin-right : auto;
 `
+//I like styled components. I'm only using them here but this is a coding sandbox so it's allowed :)
 
 function App() {
   return (
